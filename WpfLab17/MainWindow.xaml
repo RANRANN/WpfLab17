@@ -1,0 +1,13 @@
+﻿<Window x:Class="WpfLab17.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:WpfLab17"
+        local:ColorIndex.ColorChanged="ColorIndex_ColorChanged"
+        Title="MainWindow" Height="450" Width="500">
+    <Grid>
+        <StackPanel>
+            <local:ColorIndex x:Name="colorIndex" HorizontalAlignment="Center" Width="300" Height="Auto"/>
+            <TextBlock x:Name="tblock" Text="Привет!" Margin="10" Padding="10" Background="White" local:ColorIndex.ColorChanged="ColorIndex_ColorChanged"/>
+        </StackPanel>
+    </Grid>
+</Window>
